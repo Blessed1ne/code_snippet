@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <h1>Registration Page</h1>
+
+    <div class="errorMessage">
+      {{#error}}
+        {{errorMessage}}
+      {{/error}}
+    </div>
+
+
+    <form class="registerForm" action="/register" method="post">
+      <label for="">Name</label>
+      <div class="nameDiv">
+        <input id="nameInput" type="text" name="name" value="">{{#error.name}}What's your Name?{{/error.name}}
+      </div>
+
+      <label for="">Email</label>
+      <div class="emailDiv">
+        <input id="emailInput" type="email" name="email" value="">{{#error.email}}What's your Email?{{/error.email}}
+      </div>
+
+      <label for="">Username</label>
+      <div class="usernameDiv">
+        <input id="usernameInput" type="text" name="username" value="">{{#error.username}}Create a username{{/error.username}}
+      </div>
+
+      <label for="">Password</label>
+      <div class="passwordDiv">
+        <input id="passwordInput" type="password" name="password" value="">{{#error.passwordHash}}Create a password{{/error.passwordHash}}
+      </div>
+
+      <div class="buttonDiv">
+        <button id="submitButton" type="submit" name="button">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

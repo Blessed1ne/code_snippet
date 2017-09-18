@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/newSnippet.css">
+    <title>Code Snippet</title>
+  </head>
+  <body>
+      <h2>Create a New Snippet</h2>
+
+      <form class="snippet" action="/newSnippet" method="post">
+
+        <label for="">Title:</label>
+        <div class="title">
+          <input id="titleInput" type="text" name="title" value="">
+        </div>
+        <label for="">Code Snippet:</label>
+        <div class="snippet">
+          <textarea id="snippetArea" name="snippet" cols="50" rows="10"value=""></textarea>
+        </div>
+        <label for="">Notes:</label>
+        <div class="notes">
+          <textarea id="notesArea" name="notes" cols="50" rows="5" value=""></textarea>
+        </div>
+        <label for="">Language:</label>
+        <div class="language">
+          <select class="languageInput" name="language">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Javascript">Javascript</option>
+          </select>
+        </div>
+        <label for="">Tags:</label>
+        <div class="tags">
+          <input id="tagsInput" type="text" name="tags" value="">
+        </div>
+        <div class="buttonDiv">
+          <button id="submitButton" type="submit" name="button">Submit</button>
+        </div>
+      </form>
+  </body>
+</html>

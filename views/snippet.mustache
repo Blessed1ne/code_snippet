@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/snippet.css">
+    <title>Snippet Info</title>
+  </head>
+  <body>
+    {{#snippet}}
+      <div class="title">
+        <h2>{{title}}</h2>
+      </div>
+      <div class="snippetDiv">
+        <h3>Snippet:</h3>
+        {{snippet}}
+      </div>
+      <div class="notes">
+        <h3>Notes:</h3>
+        {{notes}}
+      </div>
+      <div class="language">
+        <h3>Language:</h3>
+        {{language}}
+      </div>
+      <div class="tags">
+        <h3>Tags:</h3>
+        {{tags}}
+      </div>
+      <div class="editDiv">
+        <div class="edit">
+          <a href="/snippet/{{_id}}/edit">Edit</a>
+        </div>
+        <div class="delete">
+          <a href="/snippet/{{_id}}/delete">Delete</a>
+      </div>
+
+      </div>
+    </body>
+    {{/snippet}}
+
+</html>

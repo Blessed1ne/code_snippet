@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Code Snippet</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <div class="titleHeader">
+      <h1>Code Snippets</h1>
+    </div>
+    <div class="allTheSnippets">
+      <div class="bySnippet">
+        <h2>Snippets</h2>
+        {{#newSnippet}}
+        <div class="bySnippets">
+          <a id="snippetsBySnippet" href="/snippet/{{_id}}">{{title}}</a>
+        </div>
+        {{/newSnippet}}
+      </div>
+
+      <div class="byLanguage">
+        <h2>Languages</h2>
+        {{#newSnippet}}
+        <div class="">
+          <a id="snippetsByLanguage" href="/snippet/{{_id}}">{{language}}</a>
+        </div>
+        {{/newSnippet}}
+      </div>
+
+      <div class="byTag">
+        <h2>Tags</h2>
+        {{#newSnippet}}
+        <div class="">
+          <a id="snippetsByTag" href="/snippet/{{_id}}">{{tags}}</a>
+        </div>
+        {{/newSnippet}}
+      </div>
+    </div>
+
+    <div class="linksDiv">
+      <div class="newSnippet">
+        <a id="newSnippetLink" href="/newSnippet">Create a New Snippet</a>
+      </div>
+      <div class="signOut">
+        <a id="signOutLink" href="/sign_out">Sign Out</a>
+      </div>
+    </div>
+  </body>
+</html>

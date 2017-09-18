@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/welcome.css">
+    <title>Welcome Page</title>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <h2>{{message}}</h2>
+    <form class="loginForm" action="/login" method="post">
+      <label for="">Username</label>
+      <div class="usernameDiv">
+        <input id="usernameInput"type="text" name="username" value="">
+      </div>
+
+      <label for="">Password</label>
+      <div class="passwordDiv">
+        <input id="passwordInput" type="password" name="password" value="">
+      </div>
+
+      <div class="buttonDiv">
+        <button id="submitButton" type="submit" name="button">Submit</button>
+      </div>
+    </form>
+
+    <div class="registerLink">
+      <a href="/register">Register New User</a>
+    </div>
+
+  </body>
+</html>
